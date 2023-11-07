@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="Learning-based Spotlight Position Optimization for Non-Line-of-Sight Human Localization and Posture Classification ">
+    <meta name="keywords" content="NLOS, Lighting, GNN">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning-based Spotlight Position Optimization for Non-Line-of-Sight Human Localization and Posture Classification</title>
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./static/images/favicon.svg">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">Learning-based Spotlight Position Optimization for Non-Line-of-Sight Human
+                            Localization and Posture Classification</h1>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                Sreenithy Chandran<sup>1</sup>,
+                            </span>
+                            <span class="author-block">
+                                Tatsuya Yatagawa<sup>2</sup>,
+                            </span>
+                            <span class="author-block">
+                                Hiroyuki Kubo<sup>3</sup>,
+                            </span>
+                            <span class="author-block">
+                                Suren Jayasuriya<sup>1</sup>,
+                            </span>                         
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block"><sup>1</sup>Arizona State University,</span>
+                            <span class="author-block"><sup>2</sup>Hitotsubashi University</span>
+                            <span class="author-block"><sup>3</sup>Chiba University University</span>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- PDF Link. -->
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/pdf/2011.12948"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>Paper</span>
+                                    </a>
+                                </span>
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/abs/2011.12948"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span>
+                                <!-- Video Link. -->
+                                <span class="link-block">
+                                    <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-youtube"></i>
+                                        </span>
+                                        <span>Video</span>
+                                    </a>
+                                </span>
+                                <!-- Code Link. -->
+                                <span class="link-block">
+                                    <a href="#" class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>
+                                <!-- Dataset Link. -->
+                                <span class="link-block">
+                                    <a href="https://github.com/srchandr/SpotlightNLOS"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="far fa-images"></i>
+                                        </span>
+                                        <span>Data</span>
+                                    </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <!-- Abstract. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            We present an active data-driven NLOS
+                            posture classification and tracking pipeline that works with
+                            a standard RGB camera and single spotlight illumination.
+                        </p>
+                        <p>
+                            Non-line-of-sight imaging (NLOS) is the process of estimating information about a scene that
+                            is hidden from the direct line of sight of the camera. NLOS imaging typically requires
+                            time-resolved detectors and a laser source for illumination, which are both expensive and
+                            computationally intensive to handle. In this paper, we propose an NLOS-based localization
+                            and posture classification technique that uses an off-the-shelf projector and camera system.
+                            We leverage a message-passing neural network to learn a visible scene geometry and predict
+                            the best position to be spotlighted by the projector that can maximize the NLOS signal. The
+                            neural network is trained end-to-end and the network parameters are optimized to maximize
+                            the NLOS performance. Unlike prior deep-learning-based NLOS techniques that assume planar
+                            relay walls, our system allows us to handle line-of-sight scenes where scene geometries are
+                            more arbitrary. Our method demonstrates state-of-the-art performance in object localization
+                            and position classification using both synthetic and real scenes.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <!--/ Abstract. -->
+
+
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="footer">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <p>
+                            This website is licensed under a <a rel="license"
+                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                                Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
