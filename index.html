@@ -61,9 +61,21 @@
 
                         <div class="column has-text-centered">
                             <div class="publication-links">
+                                 <!-- PDF Link. -->
+                                <span class="link-block">
+                                    <a href="https://openaccess.thecvf.com/content/WACV2024/papers/Chandran_Learning-Based_Spotlight_Position_Optimization_for_Non-Line-of-Sight_Human_Localization_and_Posture_WACV_2024_paper.pdf"
+                                    class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </span>
+                                    <span>Paper</span>
+                                    </a>
+                                </span>
+                               
                                 <!-- Code Link. -->
                                 <span class="link-block">
-                                    <a href="#" class="external-link button is-normal is-rounded is-dark">
+                                    <a href="https://github.com/srchandr/Learning-Spotlight-Optimisation-NLOS/tree/main"
+                                     class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="fab fa-github"></i>
                                         </span>
@@ -72,7 +84,7 @@
                                 </span>
                                 <!-- Dataset Link. -->
                                 <span class="link-block">
-                                    <a href="https://github.com/srchandr/Learning-Spotlight-Optimisation-NLOS/tree/main"
+                                    <a href="https://www.dropbox.com/scl/fo/74h5pwdxfb78a0izs3e3o/h?rlkey=967z3i05gmrs78401bewfkr9f&dl=0"
                                         class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="far fa-images"></i>
@@ -88,6 +100,22 @@
         </div>
     </section>
 
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+          <div class="hero-body">
+            <img src="./static/images/teaser.png"
+                 class="interpolation-image"
+                 alt="1. Given the polygonal mesh of a target scene, our method
+                 predicts which area of the scene to illuminate with a spotlight and
+                 maximize light scatter information from a hidden person. Then,
+                 we capture RGB images of the wall visible from the camera under
+                 optimal illumination. Finally, our neural network predicts the 2D
+                 position and posture of the hidden person."/>
+            <p>Start Frame</p>
+          </div>
+        </div>
+      </section>
+      
    
 
 
@@ -99,8 +127,7 @@
                     <h2 class="title is-3">Abstract</h2>
                     <div class="content has-text-justified">
                         <p>
-                            We present an active data-driven NLOS
-                            posture classification and tracking pipeline that works with
+                            We present an active data-driven NLOS posture classification and tracking pipeline that works with
                             a standard RGB camera and single spotlight illumination.
                         </p>
                         <p>
