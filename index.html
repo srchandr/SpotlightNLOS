@@ -51,17 +51,19 @@
                                 <span class="author-block">
                                     <a>Suren Jayasuriya</a>
                                     <sup>1</sup>
-                                    
                                 </span>
                                 <div class="is-size-5 publication-authors">
                                     <span class="author-block">
-                                        <sup>1</sup>Arizona State University,
+                                        <sup>1</sup>
+                                        Arizona State University,
                                     </span>
                                     <span class="author-block">
-                                        <sup>2</sup>Hitotsubashi University,
+                                        <sup>2</sup>
+                                        Hitotsubashi University,
                                     </span>
                                     <span class="author-block">
-                                        <sup>3</sup>Chiba University
+                                        <sup>3</sup>
+                                        Chiba University
                                     </span>
                                 </div>
                                 <div class="column has-text-centered">
@@ -182,94 +184,97 @@
                     </div>
                 </section>
                 <section class="section">
-                  <div class="container is-max-desktop">
-                    <!-- PAC-Net. -->
-                    <div class="columns is-centered">
-                      <div class="column is-full-width">
-                        <h2 class="title is-3">Proposed Pipeline</h2>
-                        <div class="content has-text-justified">
-                          <p>
-                            The light position calibration, rendering stage, and recognition blocks are
-used in training, while the light position calibration, 
-capture stage and recognition blocks are used in real data inference.
-                          </p>
-                        </div>
-                        <div class="columns is-vcentered">
-                          <div class="column has-text-centered">
-                            <img src="./static/images/IEN.jpg"
-                            alt="Pipeline of using PAC-Net to perform real-time NLOS Tracking"/>
-                            <p>Visualization of tracking pipeline with PAC-Net</p>
-                          </div>
-                        </div>
-                        <h3 class="title is-4">Illumination Estimation Network</h3>
-                        <div class="content has-text-justified">
-                          <p>
-                            The primary question that our study aims to
+                    <div class="container is-max-desktop">
+                        <!-- Pipeline. -->
+                        <div class="columns is-centered has-text-centered">
+                            <div class="column is-full-width">
+                                <h2 class="title is-3">Proposed Pipeline</h2>
+                                <div class="content has-text-justified">
+                                    <p>
+                                        The light position calibration, rendering stage, and recognition blocks are used in training, while the light position calibration, capture stage and recognition blocks are used in real data inference.
+                                    </p>
+                                </div>
+                                <div class="columns is-vcentered">
+                                    <div class="column has-text-centered">
+                                        <img src="./static/images/pipeline.png" alt="Pipeline of using PAC-Net to perform real-time NLOS Tracking">
+                                        <p>Visualization of tracking pipeline with PAC-Net</p>
+                                    </div>
+                                </div>
+                                <h3 class="title is-4">Illumination Estimation Network</h3>
+                                <div class="content has-text-justified">
+                                    <p>
+                                        The primary question that our study aims to
                             address is finding out where to shine the spotlight on a visible surface. To address this, we introduce an illumination
                             estimation network (IEN). The IEN takes a mesh of a scene
                             and outputs the nodes of the triangle that have to be illuminated, to maximize NLOS information
-                          </p>
-                        </div>
-                        <br/>
-                      </div>
-                    </div>
-                </section>
-                <section class="section">
-                    <div class="container is-max-desktop">
-                        <!-- Real-Tracking video. -->
-                        <div class="columns is-centered has-text-centered">
-                            <div class="column is-four-fifths">
-                                <h2 class="title is-3">Real-Tracking Results</h2>
-                                <div class="publication-video">
-                                    <iframe
-                                        src="./static/videos/Tracking.mp4"
-                                        frameborder="0"
-                                        allow="autoplay; encrypted-media"
-                                        allowfullscreen
-                                    ></iframe>
+                                    </p>
                                 </div>
+                                <br>
+                                <div class="columns is-vcentered">
+                                  <div class="column has-text-centered">
+                                      <img src="./static/images/IEN.jpg" alt="Pipeline of using PAC-Net to perform real-time NLOS Tracking">
+                                      <p>Visualization of tracking pipeline with PAC-Net</p>
+                                  </div>
+                              </div>
                             </div>
                         </div>
-                        <!--/ Paper video. -->
-                    </div>
-                </section>
-                <section class="section" id="BibTeX">
-                    <div class="container is-max-desktop content">
-                        <h2 class="title">BibTeX</h2>
-                        <pre>
-                            <code>
-                                @inproceedings{chandran2024learning,
+                    </section>
+                    <section class="section">
+                        <div class="container is-max-desktop">
+                            <!-- Real-Tracking video. -->
+                            <div class="columns is-centered has-text-centered">
+                                <div class="column is-four-fifths">
+                                    <h2 class="title is-3">Real-Tracking Results</h2>
+                                    <div class="publication-video">
+                                        <iframe
+                                            src="./static/videos/Tracking.mp4"
+                                            frameborder="0"
+                                            allow="autoplay; encrypted-media"
+                                            allowfullscreen
+                                        ></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ Paper video. -->
+                        </div>
+                    </section>
+                    <section class="section" id="BibTeX">
+                        <div class="container is-max-desktop content">
+                            <h2 class="title">BibTeX</h2>
+                            <pre>
+                                <code>
+                                    @inproceedings{chandran2024learning,
         title={Learning-Based Spotlight Position Optimization for Non-Line-of-Sight Human Localization and Posture Classification},
         author={Chandran, Sreenithy and Yatagawa, Tatsuya and Kubo, Hiroyuki and Jayasuriya, Suren},
         booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
         pages={4218--4227},
         year={2024}
       }
-                            </code>
-                        </pre>
-                    </div>
-                </section>
-                <footer class="footer">
-                    <div class="columns is-centered">
-                        <div class="column is-8">
-                            <div class="content">
-                                <p>
-                                    This website is licensed under a
-                                    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
-                                        Creative
+                                </code>
+                            </pre>
+                        </div>
+                    </section>
+                    <footer class="footer">
+                        <div class="columns is-centered">
+                            <div class="column is-8">
+                                <div class="content">
+                                    <p>
+                                        This website is licensed under a
+                                        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                                            Creative
               Commons Attribution-ShareAlike 4.0 International License
-                                    </a>
-                                    .
-                                </p>
-                                <p>
-                                    Website template borrowed from
-                                    <a href="https://github.com/nerfies/nerfies.github.io">source code</a>
-                                    .
-                                </p>
+                                        </a>
+                                        .
+                                    </p>
+                                    <p>
+                                        Website template borrowed from
+                                        <a href="https://github.com/nerfies/nerfies.github.io">source code</a>
+                                        .
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </footer>
-        </body>
-    </html>
+                </footer>
+            </body>
+        </html>
