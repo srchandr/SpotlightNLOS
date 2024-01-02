@@ -116,6 +116,27 @@
           </div>
         </div>
       </section>
+
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>
+                How we boost representation power to handle large scenes
+            </h3>
+            <br>
+            <image src="./static/images/teaser.png" style="width:100%;" class="img-responsive center-block"
+                alt="overview">
+                <br>
+                <p class="text-justify">
+                    <b>(a)</b>: We model large multi-room scenes with a number of independent submodels, each of which is
+                    assigned to a different region of the scene.  During rendering the submodel is picked
+                    based on camera origin. <b>(b)</b>: To model complex view-dependent effects, within each submodel
+                    we additionally instantiate grid-aligned copies of deferred MLP parameters \(\theta\). These
+                    parameters are trilinearly interpolated based on camera origin \(\mathbf{o}\).
+                    <b>(c)</b>: While each submodel represents the entire scene, only the submodel's assiociated grid cell
+                    is modelled with high resolution, which is realized by contracting the submodel-specific local coordinates.
+                </p>
+        </div>
+    </div>
       
    
 
